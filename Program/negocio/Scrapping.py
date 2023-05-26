@@ -47,7 +47,7 @@ def doScrappingWeb(idNumEjecuciones, columna, busquedaXpath, filePath):
         controlErrores = ControlErroresScrapping.controlErrores(urlActual, urlPost)
 
         # Grabo toda la información de los pasos que realiza la aplicación
-        BaseDatosInsert.insertarRegistro(idNumEjecuciones, datetime.now(), filePath, busquedaXpath, urlDoc,
-                                         urlActual, urlPost, controlErrores)
+        BaseDatosInsert.insertarRegistro(idNumEjecuciones, datetime.now(), filePath, busquedaXpath,
+                                         urlDoc, urlActual, urlPost, controlErrores)
 
     driver.quit()
